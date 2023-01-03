@@ -8,6 +8,8 @@ import (
 	"text/tabwriter"
 )
 
+var _ Cmd = &HelpCmd{}
+
 type HelpCmd struct{}
 
 func (h *HelpCmd) Name() string {
@@ -24,7 +26,7 @@ usage: kcli <subcommand> [<args>]
 Subcommands:
 `
 
-func showUsage(w io.Writer) error {
+func ShowUsage(w io.Writer) error {
 	cms := make([]string, len(CmdMap))
 	var i int
 	for k := range CmdMap {
@@ -43,5 +45,9 @@ func showUsage(w io.Writer) error {
 }
 
 func (h *HelpCmd) Run(args []string) error {
-	return showUsage(os.Stdout)
+	return ShowUsage(os.Stdout)
+}
+
+func (h *HelpCmd) NArg() int {
+	return 0
 }

@@ -7,6 +7,7 @@ type (
 		Name() string
 		Usage() string
 		Run([]string) error
+		NArg() int
 	}
 )
 
