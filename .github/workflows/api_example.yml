@@ -14,5 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo
-        run: echo "hello keisuke wow!"
-        run: echo "keisuke nailed it!"
+        run: echo "hello keisuke wow! well done!"
