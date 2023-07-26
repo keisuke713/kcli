@@ -6,9 +6,9 @@ on:
     types:
       - completed
     branches-ignore:
-      - master
-      # - stg
-      # - prd
+      # - master
+      - stg
+      - prd
     
 jobs:
   create_pr:
