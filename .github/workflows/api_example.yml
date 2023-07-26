@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - master
+      - stg
 
 name: Run tests for API
 
