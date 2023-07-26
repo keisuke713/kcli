@@ -1,10 +1,10 @@
 on:
-  pull_request:
-    types:
-      - synchronize
-    push:
-      branches:
-        - master
+  # pull_request:
+  #   types:
+  #     - synchronize
+  push:
+    branches:
+      - master
 
 name: Run tests for API
 
@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo
-        run: echo "hello keisuke wow!"
+        run: echo "hello keisuke woww!"
