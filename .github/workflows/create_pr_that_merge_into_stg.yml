@@ -1,0 +1,14 @@
+name: "Create PR that merge into stg"
+
+on:
+  workflow_run:
+    workflows: [Run tests for API]
+    types:
+      - completed
+    
+jobs:
+  create_pr:
+    runs-on: ubuntu-latest
+    steps:
+      -name: echo
+        run: echo "create pr"
