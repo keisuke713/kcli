@@ -7,8 +7,8 @@ on:
       - completed
     branches-ignore:
       - master
-      - stg
-      - prd
+      # - stg
+      # - prd
     
 jobs:
   create_pr:
