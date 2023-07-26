@@ -5,8 +5,10 @@ on:
     workflows: [Run tests for API]
     types:
       - completed
-    branches:
+    branches-ignore:
       - master
+      - stg
+      - prd
     
 jobs:
   create_pr:
