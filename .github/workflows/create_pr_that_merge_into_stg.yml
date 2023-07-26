@@ -10,5 +10,5 @@ jobs:
   create_pr:
     runs-on: ubuntu-latest
     steps:
-      -name: echo
+      - name: echo
         run: echo "create pr"
