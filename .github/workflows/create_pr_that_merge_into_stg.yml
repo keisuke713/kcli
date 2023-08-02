@@ -2,7 +2,10 @@ name: "Create PR that merge into stg"
 
 on:
   workflow_run:
-    workflows: [Run tests for API]
+    workflows: [
+      Run tests for API,
+      Run tests for API2
+    ]
     types:
       - completed
     branches:
